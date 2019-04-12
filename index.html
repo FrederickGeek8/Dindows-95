@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Dindows 95</title>
+  </head>
+  <body>
+    <div id="bottom">
+      <div id="start-menu">
+        <div class="sidebar"><h2>Dindows 95</h2></div>
+        <div class="items">
+          <div class="item">
+            <img src="software.png" />
+            Programs
+          </div>
+          <div class="item">
+            <img src="favorites.png" />
+            Favorites
+          </div>
+          <div class="item">
+            <img src="documents.png" />
+            Documents
+          </div>
+          <div class="item">
+            <img src="settings.png" />
+            Settings
+          </div>
+        </div>
+      </div>
+      <div id="taskbar">
+        <label class="button-wrapper">
+          <input type="checkbox" />
+          <div class="btn" id="start"><img src="start.png" />Start</div>
+        </label>
+        <div class="spacer2"></div>
+        <div class="spacer"></div>
+        <div class="btn"><img src="online.png" /></div>
+        <div class="btn"><img src="mail.png" /></div>
+        <div class="spacer2"></div>
+        <div class="spacer"></div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      var start = document.getElementById("start");
+      var start_menu = document.getElementById("start-menu");
+      start.onclick = function() {
+        if (start_menu.style.opacity == "1") {
+          start_menu.style.opacity = "0";
+        } else {
+          start_menu.style.opacity = "1";
+        }
+      };
+    </script>
+  </body>
+</html>

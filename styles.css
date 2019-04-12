@@ -1,0 +1,157 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  overflow: hidden;
+  background: #2b9c99;
+  font-family: Tahoma, Geneva, Verdana, sans-serif
+  font-family: sans-serif;
+}
+
+.button-wrapper input {
+  display: none;
+}
+
+#bottom {
+  position:absolute;
+  bottom:0;
+  left:0;
+  width: 100%;
+}
+
+#taskbar {
+  position:relative;
+  vertical-align: bottom;
+  float: bottom;
+  margin: 0;
+  padding: 2px;
+  background: #c3c3c3;
+  border-top: solid 2px #fff;
+}
+
+#start {
+  display: inline-block;
+  padding: 2px;
+  padding-left: 4px;
+  padding-right: 4px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #fff #4b4b4b #4b4b4b #fff;
+  background: #c3c3c3;
+
+  font-weight: bold;
+  font-size: 15px;
+}
+
+input:checked + #start {
+  border-color: #4b4b4b #fff #fff#4b4b4b;
+  outline: none;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1px;
+
+  border-style: solid;
+  border-width: 1px;
+  border-color: transparent;
+}
+
+.btn:hover {
+  border-color: #fff #4b4b4b #4b4b4b #fff;
+}
+
+.btn:active {
+  border-color: #4b4b4b #fff #fff #4b4b4b;
+}
+
+.btn > img {
+  vertical-align: middle;
+  height: 20px;
+  margin: 2px;
+}
+
+.spacer {
+  display: inline-block;
+  vertical-align: middle;
+  height: 20px;
+  width: 1px;
+  border-color: #fff #74757d #74757d #fff;
+  border-width: 2px;
+  border-style: solid;
+}
+
+.spacer2 {
+  display: inline-block;
+  vertical-align: middle;
+  height: 25px;
+  width: 0px;
+  border-color: #4b4b4b #fff #fff#4b4b4b;
+  border-width: 1px;
+  border-style: solid;
+}
+
+#start-menu {
+  position: relative;
+  background: #c3c3c3;
+  width: 300px;
+  height: 500px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #fff #4b4b4b #4b4b4b #fff;
+  opacity: 0;
+}
+
+.items > .item {
+  padding: 10px;
+}
+
+.items > .item:hover {
+  background: #0600a6;
+  color: white;
+}
+
+.items > .item > img {
+  vertical-align: middle;
+  height: 30px;
+}
+
+#start-menu {
+  font-size: 0;
+}
+
+#start-menu > .sidebar {
+  position: relative;
+  display: inline-block;
+  height: 100%;
+  width: 30px;
+  margin: 0;
+  background: #0600a6;
+  font-size: initial;
+}
+
+#start-menu > .items {
+  display: inline-block;
+  margin: 0;
+  width: 270px;
+  vertical-align: top;
+  font-size: initial;
+}
+
+.sidebar > h2 {
+  position: absolute;
+  bottom: 0;
+  transform: rotate(-90deg);
+  transform-origin: top left;
+  white-space: nowrap;
+  color: white;
+}
+
+img {
+  image-rendering: pixelated;
+}
