@@ -9,8 +9,7 @@ body {
 body {
   overflow: hidden;
   background: #2b9c99;
-  font-family: Tahoma, Geneva, Verdana, sans-serif
-  font-family: sans-serif;
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .button-wrapper input {
@@ -109,6 +108,14 @@ input:checked + #start {
 
 .items > .item {
   padding: 10px;
+  cursor: pointer;
+}
+
+.items > .expand::after {
+  float: right;
+  transform: translateY(50%);
+  font-size: 10px;
+  content: '\25BA';
 }
 
 .items > .item:hover {
@@ -146,10 +153,14 @@ input:checked + #start {
 .sidebar > h2 {
   position: absolute;
   bottom: 0;
-  transform: rotate(-90deg);
+  transform: rotate(-90deg) translateX(-25%);
   transform-origin: top left;
   white-space: nowrap;
   color: white;
+}
+
+.sidebar > h2 > span {
+  font-weight: normal;
 }
 
 img {
