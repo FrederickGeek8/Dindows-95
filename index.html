@@ -8,6 +8,20 @@
     <title>Dindows 95</title>
   </head>
   <body>
+    <div id="desktop">
+      <div class="draggable"><img src="computer.png" /><br />My Computer</div>
+      <div class="draggable"><img src="online.png" /><br />Web Explorer</div>
+      <br />
+      <div class="draggable">
+        <img src="documents_large.png" /><br />My Documents
+      </div>
+      <div class="draggable"><img src="trash.png" /><br />Recycle Bin</div>
+      <br />
+      <div class="draggable">
+        <img src="network.png" /><br />Network Neighborhood
+      </div>
+      <div class="draggable"><img src="mail.png" /><br />Mail</div>
+    </div>
     <div id="bottom">
       <div id="start-menu">
         <div class="sidebar">
@@ -38,6 +52,19 @@
             <img src="help.png" />
             Help
           </div>
+          <div class="item">
+            <img src="run.png" />
+            Run
+          </div>
+          <hr />
+          <div class="item">
+            <img src="logout.png" />
+            Log Off User
+          </div>
+          <div class="item">
+            <img src="shutdown.png" />
+            Shut Down
+          </div>
         </div>
       </div>
       <div id="taskbar">
@@ -51,18 +78,17 @@
         <div class="btn"><img src="mail.png" /></div>
         <div class="spacer2"></div>
         <div class="spacer"></div>
+        <div class="right">
+          <img src="volume.png" />
+          <a id="time">1:30 AM</a>
+        </div>
       </div>
     </div>
-    <script type="text/javascript">
-      var start = document.getElementById("start");
-      var start_menu = document.getElementById("start-menu");
-      start.onclick = function() {
-        if (start_menu.style.opacity == "1") {
-          start_menu.style.opacity = "0";
-        } else {
-          start_menu.style.opacity = "1";
-        }
-      };
+    <script src="interact.min.js"></script>
+    <script>
+      interact(".draggable").draggable();
     </script>
+    <script src="taskbar.js"></script>
+    <script src="desktop.js"></script>
   </body>
 </html>
