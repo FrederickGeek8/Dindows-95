@@ -9,8 +9,8 @@ function formatAMPM(date) {
   return strTime;
 }
 
-var date = new Date();
 function updateTime() {
+  var date = new Date();
   document.getElementById("time").innerText = formatAMPM(date);
 }
 
