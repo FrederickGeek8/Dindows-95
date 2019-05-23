@@ -18,14 +18,15 @@ body {
 }
 
 #bottom {
-  position:absolute;
-  bottom:0;
-  left:0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
   width: 100%;
 }
 
 #taskbar {
-  position:relative;
+  height: 32px;
+  position: relative;
   vertical-align: bottom;
   float: bottom;
   margin: 0;
@@ -70,7 +71,8 @@ input:checked + #start {
   border-color: #4b4b4b #fff #fff #4b4b4b;
 }
 
-.btn > img, .right > img {
+.btn > img,
+.right > img {
   vertical-align: middle;
   height: 20px;
   margin: 2px;
@@ -116,7 +118,7 @@ input:checked + #start {
   float: right;
   transform: translateY(50%);
   font-size: 10px;
-  content: '\25BA';
+  content: "\25BA";
 }
 
 .items > .item:hover {

@@ -1,0 +1,87 @@
+.window {
+  position: absolute;
+  left: 25%;
+  top: 25%;
+  width: 500px;
+  height: 250px;
+  background: rgb(177, 187, 188);;
+  border-top: 2px solid #dfdfdf;
+  border-left: 2px solid #dfdfdf;
+  border-right: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+
+.window > .menubar {
+  position: relative;
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  background: rgb(12, 0, 159);
+  color: white;
+  font-size: 0.8em;
+  font-weight: bold;
+  text-align: left;
+  user-select: none;
+  touch-action: none;
+}
+
+.menubar > img { 
+  vertical-align: middle;
+}
+
+.menubar > .buttons {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 2px;
+}
+
+.buttons > div {
+  display: inline-block;
+  cursor: pointer;
+  width: 16px;
+  height: 14px;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  color: black;
+  font-weight: lighter;
+  margin-top: 2px;
+  margin-left: 2px;
+  background: rgb(177, 187, 188);
+  border-top: 1px solid #dfdfdf;
+  border-left: 1px solid #dfdfdf;
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+.buttons img {
+  width: 14px;
+  height: 14px;
+}
+
+.program {
+  display: inline-block;
+  height: 22px;
+  line-height: 22px;
+  padding: 2px;
+  padding-left: 4px;
+  padding-right: 4px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #fff #4b4b4b #4b4b4b #fff;
+  background: #c3c3c3;
+
+  /* font-weight: bold; */
+  font-size: 13px;
+  vertical-align: middle;
+}
+
+.program.active {
+  border-color: #4b4b4b #fff #fff #4b4b4b;
+  font-weight: bold;
+}
+
+.program img {
+  vertical-align: middle;
+}
