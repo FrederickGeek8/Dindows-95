@@ -12,7 +12,7 @@ function formatAMPM(date) {
 function updateTime() {
   var date = new Date();
   document.getElementById("time").innerText = formatAMPM(date);
-  setTimeout(updateTime, 60000);
+  setTimeout(updateTime, 30000);
 }
 
 updateTime();

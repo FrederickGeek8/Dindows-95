@@ -75,7 +75,7 @@ class TextWindow {
       <img src="${icon}" />
       <a>${title}</a>
       <div class="buttons">
-        <div><img src="window-new.png" /></div><div><img src="window-close.png" /></div>
+        <div class="maximize"><img src="window-new.png" /></div><div class="close"><img src="window-close.png" /></div>
       </div>
     </div>
     <div class="body">
@@ -84,6 +84,8 @@ class TextWindow {
     this.taskbar = document.createElement("div");
     this.taskbar.className = "program";
     this.taskbar.innerHTML = `<img src="${icon}" /> ${title}`;
+    this.thiswindow.getElementsByClassName("close")[0].onclick = _ => this.close();
+    this.thiswindow.getElementsByClassName("maximize")[0].onclick = _ => this.maximize();
     this.thiswindow.onclick = _ => this.manager.becomeActive(this);
     this.taskbar.onclick = _ => this.manager.becomeActive(this);
   }
@@ -93,7 +95,7 @@ class TextWindow {
     document.getElementById("taskbar").appendChild(this.taskbar);
   }
 
-  close() {
+  close(event=null) {
     document.body.removeChild(this.thiswindow);
     document.getElementById("taskbar").removeChild(this.taskbar);
   }
@@ -104,6 +106,14 @@ class TextWindow {
 
   sendToFront() {
     this.thiswindow.style.zIndex = 100;
+  }
+
+  maximize() {
+    this.thiswindow.style.webkitTransform = this.thiswindow.style.transform = "translate(0px, 0px)";
+    this.thiswindow.style.width = "100%";
+    this.thiswindow.style.height = "calc(100% - 32px)";
+    this.thiswindow.style.top = "0";
+    this.thiswindow.style.left = "0";
   }
   
   toggleActive() {
