@@ -1,0 +1,11 @@
+~~~Hack the Planet CTF~~~
+What is Hack the Planet CTF?
+    Hack the Planet CTF is NYU Shanghai's first Computer Security CTF. It is a beginner-level, team-based competition aimed towards CS and IMA majors at NYU Shanghai. The competition will take place remotely during a 48-hour period in the Fall 2019 semester. Teams can work anywhere as long as they have registered at the front desk to enter the competition.
+
+What is a CTF?
+    A CTF or capture the flag, is a computer security competition in which teams compete to solve "hacking" challenges in order to obtain certain password strings or "flags". Upon getting the flags, teams will submit the flag to this website to prove that they broke the security challenge and they are awarded points. The challenges can fall into any number of categories such as: web, reverse engineering, binary exploitation, machine learning, and cryptography.
+    Points are awarded based on the number of challenges completed, as well as write ups of the team's approach to solving the challenge. Creative solutions will earn extra points, whereas write ups of incomplete solutions will receive partial credit.
+
+Who is this aimed towards?
+    This competition is suitable for students who have at least minimal knowledge of programming or cryptography. Starting this semester, there will be workshops leading up to the competition which aim to familiarize students with methodology and tools that will be utilized during the competition. These workshops will additionally discuss solutions to some basic problems from existing CTF competitions.
+    In addition to the hosted workshops, starter-packs will be distributed during the competition to give the students basic tooling that can be utilized during the competition. Included in the starter-packs will be solutions to some older CTF problems so that students who have not attended the workshops can familiarize themselves with the basic procedures and methodologies used in solving security challenges.

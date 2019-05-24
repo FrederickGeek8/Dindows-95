@@ -2,8 +2,8 @@
   position: absolute;
   left: 25%;
   top: 25%;
-  width: 500px;
-  height: 250px;
+  width: 50%;
+  height: 50%;
   background: rgb(177, 187, 188);;
   border-top: 2px solid #dfdfdf;
   border-left: 2px solid #dfdfdf;
@@ -30,7 +30,7 @@
 }
 
 .window > .body {
-  height: 100%;
+  height: calc(100% - 20px);
   width: 100%;
   padding: 1px;
 }
@@ -41,6 +41,7 @@
   height: 100%;
   resize: none;
   font-family: 'Courier New', Courier, monospace;
+  font-size: 0.75em;
 }
 
 .menubar > img { 

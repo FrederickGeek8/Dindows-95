@@ -48,6 +48,9 @@ class WindowMananger {
   }
 
   becomeActive(target) {
+    if (target.active == true) {
+      return;
+    }
     this.deactiveAll();
     target.toggleActive();
     target.sendToFront();
@@ -81,6 +84,7 @@ class TextWindow {
     this.taskbar = document.createElement("div");
     this.taskbar.className = "program";
     this.taskbar.innerHTML = `<img src="${icon}" /> ${title}`;
+    this.thiswindow.onclick = _ => this.manager.becomeActive(this);
     this.taskbar.onclick = _ => this.manager.becomeActive(this);
   }
 
@@ -112,5 +116,13 @@ class TextWindow {
   }
 }
 
-let windowmanager = new WindowMananger();
-windowmanager.addTextWindow("Hack the Planet CTF", "Hack the Planet CTF", "accessories-text-editor.png", true);
+var windowmanager = new WindowMananger();
+var http = new XMLHttpRequest();
+http.onreadystatechange = function() {
+  if (http.readyState == XMLHttpRequest.DONE && http.status == 200) {
+    windowmanager.addTextWindow("Hack the Planet CTF", http.responseText, "accessories-text-editor.png", true);
+  }
+}
+
+http.open("GET", "intro.txt", true);
+http.send();
